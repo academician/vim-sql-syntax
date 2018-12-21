@@ -165,6 +165,7 @@ syn keyword sqlTodo         contained DEBUG FIXME NOTE TODO XXX
 syn region sqlComment       start="/\*"  end="\*/" contains=sqlTodo
 syn match  sqlComment       "--.*$" contains=sqlTodo
 syn match  sqlComment       "\(^\|\s\)rem.*$" contains=sqlTodo
+syn match  sqlComment       "#.*$" contains=sqlTodo
 
 " Mark correct paren use. Different colors for different purposes.
 syn region  sqlParens       transparent matchgroup=sqlParen start="(" end=")"
